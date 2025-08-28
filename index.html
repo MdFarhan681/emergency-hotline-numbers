@@ -20,7 +20,9 @@
     />
 
     <!-- tailwind cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 
     <!-- css connect -->
     <link rel="stylesheet" href="style.css" />
@@ -39,7 +41,7 @@
   <body class="myfont">
     <header class="bg-white">
       <!-- navber -->
-      <nav class="navber flex justify-between items-center py-4 px-8">
+      <nav class="navber flex justify-between items-center py-4 px-10">
         <div class="navLeft flex justify-between items-center">
           <img
             class="w-[50px] h-[50px]"
@@ -47,28 +49,28 @@
             alt="logo"
           />
 
-          <h2 class="font-bold text-[20px] leading-none text-[#006747]">
+          <h2 class="font-bold text-[20px] leading-none text-[#006747] pl-1">
             Emergency <br />Service
           </h2>
         </div>
 
         <div class="navRight flex justify-between items-center gap-4 font-bold">
           <div
-            class="r-1 flex justify-center items-center bg-[#41b0ff1a] gap-3 rounded-4xl w-[123px] h-[52px]"
+            class="r-1 flex justify-center items-center bg-[#41b0ff1a] gap-3 rounded-4xl w-[100px] h-[40px]"
           >
-            <p>0</p>
+            <p id="loveCount">0</p>
             <img class="w-[30px] h-[30px]" src="./assets/heart.png" alt="" />
           </div>
 
           <div
-            class="r-2 flex justify-center items-center bg-[#41ff6b1a] gap-3 rounded-4xl w-[123px] h-[52px]"
+            class="r-2 flex justify-center items-center bg-[#41ff6b1a] gap-3 rounded-4xl w-[100px] h-[40px]"
           >
             <p>100</p>
             <img class="w-[30px] h-[30px]" src="./assets/coin.png" alt="" />
           </div>
 
           <div
-            class="r-3 flex justify-center items-center bg-[#00A63E] gap-3 rounded-4xl w-[123px] h-[52px]"
+            class="r-3 flex justify-center items-center bg-[#00A63E] gap-3 rounded-4xl w-[100px] h-[40px]"
           >
             <p class="text-white font-semibold">2 Copy</p>
           </div>
@@ -90,12 +92,12 @@
 
     <!-- main section -->
     <main class="bg-[#effff4cc]">
-      <div class="main pt-[48px] px-[58px] pb-[86px] w-full h-fit ">
+      <div class="main pt-[48px] px-[50px] pb-[86px] w-full h-fit flex justify-between gap-3">
         <div
-          class="mainLeft w-[80%]   grid grid-cols-3 gap-4 "
+          class="mainLeft w-[80%]   grid grid-cols-1 md:grid-cols-3 gap-4"
         >
             <!-- card design-1 -->
-                <div class="card bg-base-100 w-[365px] h-[290px] shadow-sm">
+                <div class="card bg-base-100 w-full max-w-[365px]  h-[250px]  sm:w-[365px] sm:h-[290px] shadow-sm mx-auto">
             <div class="card-body">
               <div class="cardIcon flex justify-between items-center">
                 <img
@@ -104,7 +106,7 @@
                   alt="emergency icon"
                 />
 
-                <button class="btn btn-circle border-0 bg-white">
+                <button class="loveBtn btn btn-circle border-0 bg-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -126,11 +128,11 @@
                 <h2 class="card-title text-[21px] font-bold">
                   National Emergency Number
                 </h2>
-                <p class="text-[#5C5C5C]">National Emergency</p>
+                <p class=" cardSubTitle text-[#5C5C5C]">National Emergency</p>
               </div>
 
               <div class="cardMid py-3">
-                <h2 class="text-2xl font-bold">999</h2>
+                <h2 class="phn text-2xl font-bold">999</h2>
                 <p
                   class="text-[#5C5C5C] bg-[#F2F2F2] w-fit py-1 px-4 rounded-2xl"
                 >
@@ -142,15 +144,15 @@
 
               <div class="card-actions justify-between">
                 <button
-                  class="btn bg-white w-[150px] text-[#5C5C5C] rounded-[10px]"
+                  class=" copybtn btn bg-white w-[150px] text-[#5C5C5C] rounded-[10px]"
                 >
                   <i class="fa-regular fa-copy"></i>Copy
                 </button>
 
                 <button
-                  class="btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
+                  class=" callbtn btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
                 >
-                  <i class="fa-solid fa-phone transparent"></i>Call
+                  <i class="fa-solid fa-phone"></i>Call
                 </button>
               </div>
             </div>
@@ -166,7 +168,7 @@
                   alt="emergency icon"
                 />
 
-                <button class="btn btn-circle border-0 bg-white">
+                <button class="loveBtn btn btn-circle border-0 bg-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -188,11 +190,11 @@
                 <h2 class="card-title text-[21px] font-bold">
                  Police Helpline Number
                 </h2>
-                <p class="text-[#5C5C5C]">Police</p>
+                <p class=" cardSubTitle text-[#5C5C5C]">Police</p>
               </div>
 
               <div class="cardMid py-3">
-                <h2 class="text-2xl font-bold">999</h2>
+                <h2 class=" phn text-2xl font-bold">999</h2>
                 <p
                   class="text-[#5C5C5C] bg-[#F2F2F2] w-fit py-1 px-4 rounded-2xl"
                 >
@@ -204,13 +206,13 @@
 
               <div class="card-actions justify-between">
                 <button
-                  class="btn bg-white w-[150px] text-[#5C5C5C] rounded-[10px]"
+                  class=" btn bg-white w-[150px] text-[#5C5C5C] rounded-[10px]"
                 >
                   <i class="fa-regular fa-copy"></i>Copy
                 </button>
 
                 <button
-                  class="btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
+                  class="callbtn btn bg-[#00A63E] w-[150px] text-white rounded-[10px] "
                 >
                   <i class="fa-solid fa-phone transparent"></i>Call
                 </button>
@@ -228,7 +230,7 @@
                   alt="emergency icon"
                 />
 
-                <button class="btn btn-circle border-0 bg-white">
+                <button class=" loveBtn btn btn-circle border-0 bg-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -250,11 +252,11 @@
                 <h2 class="card-title text-[21px] font-bold">
                   Fire Service Number
                 </h2>
-                <p class="text-[#5C5C5C]">Fire Service</p>
+                <p class=" cardSubTitle text-[#5C5C5C]">Fire Service</p>
               </div>
 
               <div class="cardMid py-3">
-                <h2 class="text-2xl font-bold">999</h2>
+                <h2 class="phn text-2xl font-bold">999</h2>
                 <p
                   class="text-[#5C5C5C] bg-[#F2F2F2] w-fit py-1 px-4 rounded-2xl"
                 >
@@ -272,7 +274,7 @@
                 </button>
 
                 <button
-                  class="btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
+                  class="callbtn btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
                 >
                   <i class="fa-solid fa-phone transparent"></i>Call
                 </button>
@@ -289,7 +291,7 @@
                   alt="emergency icon"
                 />
 
-                <button class="btn btn-circle border-0 bg-white">
+                <button class=" loveBtn btn btn-circle border-0 bg-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -311,11 +313,11 @@
                 <h2 class="card-title text-[21px] font-bold">
                   Ambulance Service
                 </h2>
-                <p class="text-[#5C5C5C]">Ambulance</p>
+                <p class=" cardSubTitle text-[#5C5C5C]">Ambulance</p>
               </div>
 
               <div class="cardMid py-3">
-                <h2 class="text-2xl font-bold">1994-999999</h2>
+                <h2 class=" phn text-2xl font-bold">1994-999999</h2>
                 <p
                   class="text-[#5C5C5C] bg-[#F2F2F2] w-fit py-1 px-4 rounded-2xl"
                 >
@@ -329,11 +331,11 @@
                 <button
                   class="btn bg-white w-[150px] text-[#5C5C5C] rounded-[10px]"
                 >
-                  <i class="fa-regular fa-copy"></i>Copy
+                  <i class="copybtn fa-regular fa-copy"></i>Copy
                 </button>
 
                 <button
-                  class="btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
+                  class="callbtn btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
                 >
                   <i class="fa-solid fa-phone transparent"></i>Call
                 </button>
@@ -350,7 +352,7 @@
                   alt="emergency icon"
                 />
 
-                <button class="btn btn-circle border-0 bg-white">
+                <button class=" loveBtn btn btn-circle border-0 bg-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -372,11 +374,11 @@
                 <h2 class="card-title text-[21px] font-bold">
                   Women & Child Helpline
                 </h2>
-                <p class="text-[#5C5C5C]">Women & Child Helpline</p>
+                <p class=" cardSubTitle text-[#5C5C5C]">Women & Child Helpline</p>
               </div>
 
               <div class="cardMid py-3">
-                <h2 class="text-2xl font-bold">109</h2>
+                <h2 class=" phn text-2xl font-bold">109</h2>
                 <p
                   class="text-[#5C5C5C] bg-[#F2F2F2] w-fit py-1 px-4 rounded-2xl"
                 >
@@ -388,13 +390,13 @@
 
               <div class="card-actions justify-between">
                 <button
-                  class="btn bg-white w-[150px] text-[#5C5C5C] rounded-[10px]"
+                  class="copybtn btn bg-white w-[150px] text-[#5C5C5C] rounded-[10px]"
                 >
                   <i class="fa-regular fa-copy"></i>Copy
                 </button>
 
                 <button
-                  class="btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
+                  class="callbtn btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
                 >
                   <i class="fa-solid fa-phone transparent"></i>Call
                 </button>
@@ -411,7 +413,7 @@
                   alt="emergency icon"
                 />
 
-                <button class="btn btn-circle border-0 bg-white">
+                <button class=" loveBtn btn btn-circle border-0 bg-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -433,11 +435,11 @@
                 <h2 class="card-title text-[21px] font-bold">
                Anti-Corruption Helpline
                 </h2>
-                <p class="text-[#5C5C5C]">Anti-Corruption</p>
+                <p class="cardSubTitle text-[#5C5C5C]">Anti-Corruption</p>
               </div>
 
               <div class="cardMid py-3">
-                <h2 class="text-2xl font-bold">106</h2>
+                <h2 class="phn text-2xl font-bold">106</h2>
                 <p
                   class="text-[#5C5C5C] bg-[#F2F2F2] w-fit py-1 px-4 rounded-2xl"
                 >
@@ -449,13 +451,13 @@
 
               <div class="card-actions justify-between">
                 <button
-                  class="btn bg-white w-[150px] text-[#5C5C5C] rounded-[10px]"
+                  class="copybtn btn bg-white w-[150px] text-[#5C5C5C] rounded-[10px]"
                 >
                   <i class="fa-regular fa-copy"></i>Copy
                 </button>
 
                 <button
-                  class="btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
+                  class=" callbtn btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
                 >
                   <i class="fa-solid fa-phone transparent"></i>Call
                 </button>
@@ -472,7 +474,7 @@
                   alt="emergency icon"
                 />
 
-                <button class="btn btn-circle border-0 bg-white">
+                <button class=" loveBtn btn btn-circle border-0 bg-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -494,11 +496,11 @@
                 <h2 class="card-title text-[21px] font-bold">
                  Electricity Helpline
                 </h2>
-                <p class="text-[#5C5C5C]">Electricity Outage</p>
+                <p class="cardSubTitle text-[#5C5C5C]">Electricity Outage</p>
               </div>
 
               <div class="cardMid py-3">
-                <h2 class="text-2xl font-bold">16216</h2>
+                <h2 class=" phn text-2xl font-bold">16216</h2>
                 <p
                   class="text-[#5C5C5C] bg-[#F2F2F2] w-fit py-1 px-4 rounded-2xl"
                 >
@@ -510,13 +512,13 @@
 
               <div class="card-actions justify-between">
                 <button
-                  class="btn bg-white w-[150px] text-[#5C5C5C] rounded-[10px]"
+                  class=" copybtn btn bg-white w-[150px] text-[#5C5C5C] rounded-[10px]"
                 >
                   <i class="fa-regular fa-copy"></i>Copy
                 </button>
 
                 <button
-                  class="btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
+                  class="callbtn btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
                 >
                   <i class="fa-solid fa-phone transparent"></i>Call
                 </button>
@@ -533,7 +535,7 @@
                   alt="emergency icon"
                 />
 
-                <button class="btn btn-circle border-0 bg-white">
+                <button class=" loveBtn btn btn-circle border-0 bg-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -555,11 +557,11 @@
                 <h2 class="card-title text-[21px] font-bold">
                   Brac Helpline
                 </h2>
-                <p class="text-[#5C5C5C]">Brac</p>
+                <p class="cardSubTitle text-[#5C5C5C]">Brac</p>
               </div>
 
               <div class="cardMid py-3">
-                <h2 class="text-2xl font-bold">16445</h2>
+                <h2 class="phn text-2xl font-bold">16445</h2>
                 <p
                   class="text-[#5C5C5C] bg-[#F2F2F2] w-fit py-1 px-4 rounded-2xl"
                 >
@@ -571,13 +573,13 @@
 
               <div class="card-actions justify-between">
                 <button
-                  class="btn bg-white w-[150px] text-[#5C5C5C] rounded-[10px]"
+                  class=" copybtn btn bg-white w-[150px] text-[#5C5C5C] rounded-[10px]"
                 >
                   <i class="fa-regular fa-copy"></i>Copy
                 </button>
 
                 <button
-                  class="btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
+                  class="callbtn btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
                 >
                   <i class="fa-solid fa-phone transparent"></i>Call
                 </button>
@@ -594,7 +596,7 @@
                   alt="emergency icon"
                 />
 
-                <button class="btn btn-circle border-0 bg-white">
+                <button class=" loveBtn btn btn-circle border-0 bg-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -616,11 +618,11 @@
                 <h2 class="card-title text-[21px] font-bold">
                   Bangladesh Railway Helpline 
                 </h2>
-                <p class="text-[#5C5C5C]">Bangladesh Railway</p>
+                <p class="cardSubTitle text-[#5C5C5C]">Bangladesh Railway</p>
               </div>
 
               <div class="cardMid py-3">
-                <h2 class="text-2xl font-bold">163</h2>
+                <h2 class="phn text-2xl font-bold">163</h2>
                 <p
                   class="text-[#5C5C5C] bg-[#F2F2F2] w-fit py-1 px-4 rounded-2xl"
                 >
@@ -632,13 +634,13 @@
 
               <div class="card-actions justify-between">
                 <button
-                  class="btn bg-white w-[150px] text-[#5C5C5C] rounded-[10px]"
+                  class="copybtn btn bg-white w-[150px] text-[#5C5C5C] rounded-[10px]"
                 >
                   <i class="fa-regular fa-copy"></i>Copy
                 </button>
 
                 <button
-                  class="btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
+                  class="callbtn btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
                 >
                   <i class="fa-solid fa-phone transparent"></i>Call
                 </button>
@@ -650,10 +652,20 @@
 
         </div>
 
-        <div class="mainRight w-[20%]"></div>
+        <div class="mainRight w-[20%] bg-white shadow-sm rounded-[10px] ml-2 p-4 ">
+
+            <div class="rightHead flex justify-between items-center">
+                 <h3><i class="fa-regular fa-clock pr-6 text-[#5C5C5C] "></i><span class="font-semibold">Call History</span></h3>
+            <button class="btn  bg-[#00A63E] gap-3 rounded-4xl w-[90px] h-[35px] text-white">Clear</button>
+
+            </div>
+           
+
+           
+        </div>
       </div>
     </main>
-    <footer></footer>
+   
     <script src="./script.js"></script>
   </body>
 </html>
