@@ -1,11 +1,659 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- css connect -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>Emergency Hotline</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="myfont">
+    <header class="bg-white">
+      <!-- navber -->
+      <nav class="navber flex justify-between items-center py-4 px-8">
+        <div class="navLeft flex justify-between items-center">
+          <img
+            class="w-[50px] h-[50px]"
+            src="./assets/logo-dark.png"
+            alt="logo"
+          />
+
+          <h2 class="font-bold text-[20px] leading-none text-[#006747]">
+            Emergency <br />Service
+          </h2>
+        </div>
+
+        <div class="navRight flex justify-between items-center gap-4 font-bold">
+          <div
+            class="r-1 flex justify-center items-center bg-[#41b0ff1a] gap-3 rounded-4xl w-[123px] h-[52px]"
+          >
+            <p>0</p>
+            <img class="w-[30px] h-[30px]" src="./assets/heart.png" alt="" />
+          </div>
+
+          <div
+            class="r-2 flex justify-center items-center bg-[#41ff6b1a] gap-3 rounded-4xl w-[123px] h-[52px]"
+          >
+            <p>100</p>
+            <img class="w-[30px] h-[30px]" src="./assets/coin.png" alt="" />
+          </div>
+
+          <div
+            class="r-3 flex justify-center items-center bg-[#00A63E] gap-3 rounded-4xl w-[123px] h-[52px]"
+          >
+            <p class="text-white font-semibold">2 Copy</p>
+          </div>
+        </div>
+      </nav>
+
+      <!-- banaer -->
+      <div
+        class="banner w-full h-[240px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-white flex flex-col justify-center items-center"
+      >
+        <img class="w-[92px] h-[92px]" src="./assets/logo.png" alt="logo" />
+        <h1 class="font-bold text-[40px] py-1">Emergency Service Directory</h1>
+        <p class="font-semibold text-[20px]">
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <main class="bg-[#effff4cc]">
+      <div class="main pt-[48px] px-[58px] pb-[86px] w-full h-fit ">
+        <div
+          class="mainLeft w-[80%]   grid grid-cols-3 gap-4 "
+        >
+            <!-- card design-1 -->
+                <div class="card bg-base-100 w-[365px] h-[290px] shadow-sm">
+            <div class="card-body">
+              <div class="cardIcon flex justify-between items-center">
+                <img
+                  class="w-[46px] h-[46px] rounded-2xl bg-[#FFE3E2] p-[14px]"
+                  src="./assets/emergency.png"
+                  alt="emergency icon"
+                />
+
+                <button class="btn btn-circle border-0 bg-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2.5"
+                    stroke="currentColor"
+                    class="size-[1.5em] text-[#5C5C5C]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="cardCont">
+                <h2 class="card-title text-[21px] font-bold">
+                  National Emergency Number
+                </h2>
+                <p class="text-[#5C5C5C]">National Emergency</p>
+              </div>
+
+              <div class="cardMid py-3">
+                <h2 class="text-2xl font-bold">999</h2>
+                <p
+                  class="text-[#5C5C5C] bg-[#F2F2F2] w-fit py-1 px-4 rounded-2xl"
+                >
+                  All
+                </p>
+              </div>
+
+              <!-- Card Button -->
+
+              <div class="card-actions justify-between">
+                <button
+                  class="btn bg-white w-[150px] text-[#5C5C5C] rounded-[10px]"
+                >
+                  <i class="fa-regular fa-copy"></i>Copy
+                </button>
+
+                <button
+                  class="btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
+                >
+                  <i class="fa-solid fa-phone transparent"></i>Call
+                </button>
+              </div>
+            </div>
+                 </div>
+
+            <!-- card design-2 -->
+                <div class="card bg-base-100 w-[365px] h-[290px] shadow-sm">
+            <div class="card-body">
+              <div class="cardIcon flex justify-between items-center">
+                <img
+                  class="w-[46px] h-[46px] rounded-2xl bg-[#DFEFFF] p-[10px]"
+                  src="./assets/police.png"
+                  alt="emergency icon"
+                />
+
+                <button class="btn btn-circle border-0 bg-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2.5"
+                    stroke="currentColor"
+                    class="size-[1.5em] text-[#5C5C5C]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="cardCont">
+                <h2 class="card-title text-[21px] font-bold">
+                 Police Helpline Number
+                </h2>
+                <p class="text-[#5C5C5C]">Police</p>
+              </div>
+
+              <div class="cardMid py-3">
+                <h2 class="text-2xl font-bold">999</h2>
+                <p
+                  class="text-[#5C5C5C] bg-[#F2F2F2] w-fit py-1 px-4 rounded-2xl"
+                >
+                  Police
+                </p>
+              </div>
+
+              <!-- Card Button -->
+
+              <div class="card-actions justify-between">
+                <button
+                  class="btn bg-white w-[150px] text-[#5C5C5C] rounded-[10px]"
+                >
+                  <i class="fa-regular fa-copy"></i>Copy
+                </button>
+
+                <button
+                  class="btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
+                >
+                  <i class="fa-solid fa-phone transparent"></i>Call
+                </button>
+              </div>
+            </div>
+                 </div>
+
+            <!-- card design-3 -->
+                 <div class="card bg-base-100 w-[365px] h-[290px] shadow-sm">
+            <div class="card-body">
+              <div class="cardIcon flex justify-between items-center">
+                <img
+                  class="w-[46px] h-[46px] rounded-2xl bg-[#FFE3E2] p-[12px]"
+                  src="./assets/fire-service.png"
+                  alt="emergency icon"
+                />
+
+                <button class="btn btn-circle border-0 bg-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2.5"
+                    stroke="currentColor"
+                    class="size-[1.5em] text-[#5C5C5C]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="cardCont">
+                <h2 class="card-title text-[21px] font-bold">
+                  Fire Service Number
+                </h2>
+                <p class="text-[#5C5C5C]">Fire Service</p>
+              </div>
+
+              <div class="cardMid py-3">
+                <h2 class="text-2xl font-bold">999</h2>
+                <p
+                  class="text-[#5C5C5C] bg-[#F2F2F2] w-fit py-1 px-4 rounded-2xl"
+                >
+                  Fire
+                </p>
+              </div>
+
+              <!-- Card Button -->
+
+              <div class="card-actions justify-between">
+                <button
+                  class="btn bg-white w-[150px] text-[#5C5C5C] rounded-[10px]"
+                >
+                  <i class="fa-regular fa-copy"></i>Copy
+                </button>
+
+                <button
+                  class="btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
+                >
+                  <i class="fa-solid fa-phone transparent"></i>Call
+                </button>
+              </div>
+            </div>
+                 </div>
+             <!-- card design-4 -->
+              <div class="card bg-base-100 w-[365px] h-[290px] shadow-sm">
+            <div class="card-body">
+              <div class="cardIcon flex justify-between items-center">
+                <img
+                  class="w-[46px] h-[46px] rounded-2xl bg-[#FFE3E2] p-[12px]"
+                  src="./assets/ambulance.png"
+                  alt="emergency icon"
+                />
+
+                <button class="btn btn-circle border-0 bg-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2.5"
+                    stroke="currentColor"
+                    class="size-[1.5em] text-[#5C5C5C]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="cardCont">
+                <h2 class="card-title text-[21px] font-bold">
+                  Ambulance Service
+                </h2>
+                <p class="text-[#5C5C5C]">Ambulance</p>
+              </div>
+
+              <div class="cardMid py-3">
+                <h2 class="text-2xl font-bold">1994-999999</h2>
+                <p
+                  class="text-[#5C5C5C] bg-[#F2F2F2] w-fit py-1 px-4 rounded-2xl"
+                >
+                 Health
+                </p>
+              </div>
+
+              <!-- Card Button -->
+
+              <div class="card-actions justify-between">
+                <button
+                  class="btn bg-white w-[150px] text-[#5C5C5C] rounded-[10px]"
+                >
+                  <i class="fa-regular fa-copy"></i>Copy
+                </button>
+
+                <button
+                  class="btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
+                >
+                  <i class="fa-solid fa-phone transparent"></i>Call
+                </button>
+              </div>
+            </div>
+                 </div>
+              <!-- card design-5 --> 
+               <div class="card bg-base-100 w-[365px] h-[290px] shadow-sm">
+            <div class="card-body">
+              <div class="cardIcon flex justify-between items-center">
+                <img
+                  class="w-[46px] h-[46px] rounded-2xl bg-[#FFE3E2] p-[14px]"
+                  src="./assets/emergency.png"
+                  alt="emergency icon"
+                />
+
+                <button class="btn btn-circle border-0 bg-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2.5"
+                    stroke="currentColor"
+                    class="size-[1.5em] text-[#5C5C5C]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="cardCont">
+                <h2 class="card-title text-[21px] font-bold">
+                  Women & Child Helpline
+                </h2>
+                <p class="text-[#5C5C5C]">Women & Child Helpline</p>
+              </div>
+
+              <div class="cardMid py-3">
+                <h2 class="text-2xl font-bold">109</h2>
+                <p
+                  class="text-[#5C5C5C] bg-[#F2F2F2] w-fit py-1 px-4 rounded-2xl"
+                >
+                 Help
+                </p>
+              </div>
+
+              <!-- Card Button -->
+
+              <div class="card-actions justify-between">
+                <button
+                  class="btn bg-white w-[150px] text-[#5C5C5C] rounded-[10px]"
+                >
+                  <i class="fa-regular fa-copy"></i>Copy
+                </button>
+
+                <button
+                  class="btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
+                >
+                  <i class="fa-solid fa-phone transparent"></i>Call
+                </button>
+              </div>
+            </div>
+                 </div>    
+               <!-- card design-6 -->
+                <div class="card bg-base-100 w-[365px] h-[290px] shadow-sm">
+            <div class="card-body">
+              <div class="cardIcon flex justify-between items-center">
+                <img
+                  class="w-[46px] h-[46px] rounded-2xl bg-[#FFE3E2] p-[14px]"
+                  src="./assets/emergency.png"
+                  alt="emergency icon"
+                />
+
+                <button class="btn btn-circle border-0 bg-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2.5"
+                    stroke="currentColor"
+                    class="size-[1.5em] text-[#5C5C5C]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="cardCont">
+                <h2 class="card-title text-[21px] font-bold">
+               Anti-Corruption Helpline
+                </h2>
+                <p class="text-[#5C5C5C]">Anti-Corruption</p>
+              </div>
+
+              <div class="cardMid py-3">
+                <h2 class="text-2xl font-bold">106</h2>
+                <p
+                  class="text-[#5C5C5C] bg-[#F2F2F2] w-fit py-1 px-4 rounded-2xl"
+                >
+                  Govt.
+                </p>
+              </div>
+
+              <!-- Card Button -->
+
+              <div class="card-actions justify-between">
+                <button
+                  class="btn bg-white w-[150px] text-[#5C5C5C] rounded-[10px]"
+                >
+                  <i class="fa-regular fa-copy"></i>Copy
+                </button>
+
+                <button
+                  class="btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
+                >
+                  <i class="fa-solid fa-phone transparent"></i>Call
+                </button>
+              </div>
+            </div>
+                 </div>
+                <!-- card design-7 -->
+                 <div class="card bg-base-100 w-[365px] h-[290px] shadow-sm">
+            <div class="card-body">
+              <div class="cardIcon flex justify-between items-center">
+                <img
+                  class="w-[46px] h-[46px] rounded-2xl bg-[#FFE3E2] p-[14px]"
+                  src="./assets/emergency.png"
+                  alt="emergency icon"
+                />
+
+                <button class="btn btn-circle border-0 bg-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2.5"
+                    stroke="currentColor"
+                    class="size-[1.5em] text-[#5C5C5C]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="cardCont">
+                <h2 class="card-title text-[21px] font-bold">
+                 Electricity Helpline
+                </h2>
+                <p class="text-[#5C5C5C]">Electricity Outage</p>
+              </div>
+
+              <div class="cardMid py-3">
+                <h2 class="text-2xl font-bold">16216</h2>
+                <p
+                  class="text-[#5C5C5C] bg-[#F2F2F2] w-fit py-1 px-4 rounded-2xl"
+                >
+                  Electricity
+                </p>
+              </div>
+
+              <!-- Card Button -->
+
+              <div class="card-actions justify-between">
+                <button
+                  class="btn bg-white w-[150px] text-[#5C5C5C] rounded-[10px]"
+                >
+                  <i class="fa-regular fa-copy"></i>Copy
+                </button>
+
+                <button
+                  class="btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
+                >
+                  <i class="fa-solid fa-phone transparent"></i>Call
+                </button>
+              </div>
+            </div>
+                 </div>
+                 <!-------- card design-8 --------->
+                  <div class="card bg-base-100 w-[365px] h-[290px] shadow-sm">
+            <div class="card-body">
+              <div class="cardIcon flex justify-between items-center">
+                <img
+                  class="w-[46px] h-[46px] rounded-2xl bg-[#FFE3E2] p-[12px]"
+                  src="./assets/brac.png"
+                  alt="emergency icon"
+                />
+
+                <button class="btn btn-circle border-0 bg-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2.5"
+                    stroke="currentColor"
+                    class="size-[1.5em] text-[#5C5C5C]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="cardCont">
+                <h2 class="card-title text-[21px] font-bold">
+                  Brac Helpline
+                </h2>
+                <p class="text-[#5C5C5C]">Brac</p>
+              </div>
+
+              <div class="cardMid py-3">
+                <h2 class="text-2xl font-bold">16445</h2>
+                <p
+                  class="text-[#5C5C5C] bg-[#F2F2F2] w-fit py-1 px-4 rounded-2xl"
+                >
+                  NGO
+                </p>
+              </div>
+
+              <!-- Card Button -->
+
+              <div class="card-actions justify-between">
+                <button
+                  class="btn bg-white w-[150px] text-[#5C5C5C] rounded-[10px]"
+                >
+                  <i class="fa-regular fa-copy"></i>Copy
+                </button>
+
+                <button
+                  class="btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
+                >
+                  <i class="fa-solid fa-phone transparent"></i>Call
+                </button>
+              </div>
+            </div>
+                 </div>
+                  <!-------- card design-9 ---------->
+                   <div class="card bg-base-100 w-[365px] h-[290px] shadow-sm">
+            <div class="card-body">
+              <div class="cardIcon flex justify-between items-center">
+                <img
+                  class="w-[46px] h-[46px] rounded-2xl bg-[#FFE3E2] p-[12px]"
+                  src="./assets/Bangladesh-Railway.png"
+                  alt="emergency icon"
+                />
+
+                <button class="btn btn-circle border-0 bg-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2.5"
+                    stroke="currentColor"
+                    class="size-[1.5em] text-[#5C5C5C]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="cardCont">
+                <h2 class="card-title text-[21px] font-bold">
+                  Bangladesh Railway Helpline 
+                </h2>
+                <p class="text-[#5C5C5C]">Bangladesh Railway</p>
+              </div>
+
+              <div class="cardMid py-3">
+                <h2 class="text-2xl font-bold">163</h2>
+                <p
+                  class="text-[#5C5C5C] bg-[#F2F2F2] w-fit py-1 px-4 rounded-2xl"
+                >
+                  Travel
+                </p>
+              </div>
+
+              <!-- Card Button -->
+
+              <div class="card-actions justify-between">
+                <button
+                  class="btn bg-white w-[150px] text-[#5C5C5C] rounded-[10px]"
+                >
+                  <i class="fa-regular fa-copy"></i>Copy
+                </button>
+
+                <button
+                  class="btn bg-[#00A63E] w-[150px] text-white rounded-[10px]"
+                >
+                  <i class="fa-solid fa-phone transparent"></i>Call
+                </button>
+              </div>
+            </div>
+                 </div>
+
+
+
+        </div>
+
+        <div class="mainRight w-[20%]"></div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="./script.js"></script>
+  </body>
 </html>
