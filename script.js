@@ -8,20 +8,13 @@ function takeInput(clsName, outname) {
     msg2,
     msg3,
     card;
-    // his = [];
-
+   
   if (clsName === "loveBtn") {
     namArray = document.getElementsByClassName(clsName);
 
     for (i = 0; i < namArray.length; i++) {
       namArray[i].addEventListener("click", function () {
-        // counterId = idClick(outname);
-
-        // counter = parseInt(counterId.innerText);
-
-        // counter = counter + 1;
-        // counterId.innerText = counter;
-
+        
         incCounter(outname);
       });
     }
@@ -42,11 +35,11 @@ function takeInput(clsName, outname) {
           date: new Date().toLocaleTimeString(),
         };
 
-        // his.push(data);
+    
         const div = document.createElement("div");
         div.innerHTML = `
 
-         <div class=" w-65 bg-base-100 card-xs shadow-sm flex mx-auto  justify-between items-center m-2 rounded-lg">
+         <div class=" max-w-full md:w-65 bg-base-100 card-xs shadow-sm flex mx-auto  justify-between items-center m-2 rounded-lg">
             <div class="card-body">
               <h2 class="font-bold text-[16px]" card-title font-bold">${data.calltitle}</h2>
               <p class="text-[12px]" >${data.callnumber}</p>
@@ -166,7 +159,7 @@ function idClick(id) {
 }
 
 
-
+// function call 
 
 takeInput("loveBtn", "loveCount");
 takeInput("callbtn", "cardSubTitle");
