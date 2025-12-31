@@ -1,5 +1,33 @@
-1.getElementByid:
+Emergency Hotline Web App
+
+An interactive emergency hotline web application that allows users to directly call emergency numbers while tracking call activity. Each call deducts coins from the user’s balance, and a detailed call history is maintained for transparency and record keeping.
+
+Users can view their call history with timestamps, delete previous records, and monitor coin usage through a simple and intuitive interface. The application is designed to be responsive and easy to use across all devices.
+
+*****Key Features*******
+
+Call any emergency hotline number directly
+
+Coin-based system that deducts coins for each call
+
+Call history with call time and details
+
+Option to delete call history records
+
+Clean, modern, and responsive UI
+
+
+*****Technologies Used*****
+
+React.js
+
+JavaScript (ES6+)
+
+Tailwind CSS1.getElementByid:
 we can find one element form html in js.
+
+
+*****Question Answer*****
 
 getElementsByClassName:
 find all html elements of our requried class name.acceses its returns value like an array of elements
